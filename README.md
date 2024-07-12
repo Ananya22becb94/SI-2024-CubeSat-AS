@@ -66,5 +66,9 @@ Frequency-shift keying (FSK) is a digital modulation technique that transmits in
 Code-[FSK](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/FSK)
 ![WhatsApp Image 2024-07-11 at 21 09 14](https://github.com/user-attachments/assets/dabcf1fd-2ac1-4b33-8b07-b0a43f650c3e)
 
+### Generation of Cos Wave
+We used python to generate a cos wave of desired frequency
+Code-[Generation of cos wave](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/Generation%20of%20cos%20wave)
+
 
 
