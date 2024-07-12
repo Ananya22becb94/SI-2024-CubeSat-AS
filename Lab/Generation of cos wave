@@ -1,0 +1,35 @@
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Constants
+frequency = 2e6  # 2 MHz
+samples_per_cycle = 256
+num_cycles = 3  # Number of cycles to plot
+
+# Calculate parameters
+omega = 2 * np.pi * frequency
+total_samples = samples_per_cycle * num_cycles
+
+# Generate time vector
+t = np.linspace(0, num_cycles * (1 / frequency), total_samples)
+
+# Generate cosine wave
+cos_wave = np.cos(omega * t)
+
+# Plotting
+plt.figure(figsize=(10, 6))
+plt.plot(t, cos_wave, label=f'Cosine Wave - {frequency/1e6} MHz')
+plt.title('Cosine Wave of Frequency 2 MHz')
+plt.xlabel('Time (s)')
+plt.ylabel('Amplitude')
+plt.axhline(0, color='black', linewidth=0.5)  # Horizontal line at y=0
+plt.axvline(0, color='black', linewidth=0.5)  # Vertical line at x=0
+plt.grid(True, which='both', linestyle='--', linewidth=0.5)
+plt.legend()
+
+# Annotate with frequency and samples per cycle
+plt.annotate(f'Frequency = {frequency/1e6} MHz', xy=(0.05, 0.9), xycoords='axes fraction')
+plt.annotate(f'Samples per cycle = {samples_per_cycle}', xy=(0.05, 0.85), xycoords='axes fraction')
+
+plt.show()
