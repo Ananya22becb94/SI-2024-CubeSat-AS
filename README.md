@@ -55,4 +55,16 @@ equivalent resistance calculation- for the circuit as shown GPIO->R->LED diode->
 so the equivalent resistance which we had choosen for our convienience was= 100 ohms
 
 ## Lab-4 SIGNAL PROCESSING USING PYTHON:-
+#### FFT
+Fourier analysis transforms signals from the time domain to the frequency domain. A mathematical method for transforming a finite time function of equally spaced time samples into a function of frequency of equally spaced complex frequency samples.
+We have used python to implement FFT using WSL to change signals from time to frequency domain and observe the waveform.
+Code -[FFT](
+
+
+
+
+
+
+
+
 
