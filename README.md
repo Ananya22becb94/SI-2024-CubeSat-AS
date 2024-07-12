@@ -47,3 +47,12 @@ Parameters from the LED Datasheet
 |Colour| Red |
 |Typical Capacitance| 45 pF|
 |Operating Range| -40 to 85 C|
+
+equivalent resistance calculation- for the circuit as shown GPIO->R->LED diode->0
+
+=>4.34-30x10pow(-3)(R)-0.7=0 =>R=3.64/30x10pow(-3)= 121.33 ohms
+
+so the equivalent resistance which we had choosen for our convienience was= 100 ohms
+
+## Lab-4 SIGNAL PROCESSING USING PYTHON:-
+
