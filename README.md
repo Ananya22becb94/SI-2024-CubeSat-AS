@@ -144,7 +144,7 @@ int led13 = 11;                // LED connected to digital pin 11
 ![oled](https://github.com/user-attachments/assets/f5305fb5-a027-4e0c-9fb6-c8ba7d1f6545)
 
 ## ## Lab-6 Controlling an LED through serial monitor
-Serial monitor to OLED Display-
+Serial monitor to OLED Display-[Control](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/tree/main/Lab)
 ## Lab-8 SIGNAL PROCESSING USING PYTHON:-
 
 #### FFT
