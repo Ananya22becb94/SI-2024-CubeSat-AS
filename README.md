@@ -167,7 +167,7 @@ We used python to generate a cos wave of desired frequency
 Code-[Generation of cos wave](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/Generation%20of%20cos%20wave)
 
 ##  Lab-9 I2C temperature sensor interface
-We have simulated DHT22 to sense temperature and humidity and display every packet of data recieved by a serial monitor.
+We have simulated DHT22 to sense temperature and humidity and display every packet of data recieved by a serial monitor. Code for temperature sensing -[temperature sensor interface](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/temperature%20sensor)
 ## Introduction to antenna modeling and simulation software 4NEC2:-
 
 Using 4NEC2, we did modelling of Antenna and observed the frequency sweep , radiation pattern,SWR etc.
