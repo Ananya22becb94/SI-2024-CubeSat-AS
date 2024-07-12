@@ -61,9 +61,83 @@ Parameters from the LED Datasheet
 equivalent resistance calculation- for the circuit as shown GPIO->R->LED diode->0
 
 =>4.34-30x10pow(-3)(R)-0.7=0 =>R=3.64/30x10pow(-3)= 121.33 ohms
-
 so the equivalent resistance which we had choosen for our convienience was= 100 ohms
 
+- Code for controlling the led intensity-
+``` C
+int led = 5;
+int brightness = 0;
+int fadeamount = 5;
+void setup() {
+  pinMode(led,OUTPUT);
+}
+void loop() {
+  analogWrite(led,brightness);
+  brightness=brightness+fadeamount;
+  if(brightness<=0 || brightness>=255) {
+    fadeamount=-fadeamount;
+  }
+  delay(30);
+}
+``` 
+- Code to assign an input port for 2-step dimmer control.
+Full intensity, 0: 25-percent intensity.
+``` C
+#define ledcSetup
+#define ledcAttachPin
+const int ledpin = 18;
+const int freq = 5000;
+const int resolution = 8;
+void setup() {
+ ledcAttachPin(ledpin,freq,resolution);
+} 
+void loop() {
+ for(int dutyCycle = 255; dutyCycle <= 0; dutyCycle++ ){
+   ledcWrite(ledpin, dutyCycle);
+   delay(1000);
+ }
+ for(int dutyCycle = 255; dutyCycle >=0; dutyCycle--){
+   ledcWrite(ledpin, dutyCycle);
+   delay(1000);
+ }
+}
+```
+## Lab-4 Dimming multiple LEDs
+``` C
+int led13 = 11;                // LED connected to digital pin 11
+      int led12 = 10;
+      int led11 = 9;
+      int led10 = 6;
+      int led09 = 5;
+      int led08 = 3;
+      
+      void setup()                    // run once, when the sketch starts
+      {
+            
+            pinMode(led13, OUTPUT);      // sets the digital pin as output
+            pinMode(led12, OUTPUT);
+            pinMode(led11, OUTPUT);
+            pinMode(led10, OUTPUT);
+            pinMode(led09, OUTPUT);
+            pinMode(led08, OUTPUT);
+      }
+      void loop()                     // run over and over again
+      {
+            int analogValue = analogRead(0);
+            int analogValue1 = analogRead(2);
+            Serial.println(analogValue);
+            Serial.println(analogValue1);
+            delay(10);
+            if (analogValue > 500) {
+                  for(int fadeValue = 0; fadeValue <= 255; fadeValue += 5){
+                  analogWrite(led13, fadeValue);   
+                  delay(30);                               
+                  }
+                  for(int fadeValue = 0; fadeValue <= 255; fadeValue += 5){      
+                  analogWrite(led12, fadeValue);    
+                  delay(30); 
+                         }
+```
 ## Lab-8 SIGNAL PROCESSING USING PYTHON:-
 #### FFT
 Fourier analysis transforms signals from the time domain to the frequency domain. A mathematical method for transforming a finite time function of equally spaced time samples into a function of frequency of equally spaced complex frequency samples.
