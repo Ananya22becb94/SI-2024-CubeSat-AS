@@ -11,7 +11,11 @@ The number of joined units classifies the size of CubeSats and according to the 
 # Lab Exercises
 
 ## Lab-1 Introduction to ESP32
-
+#### Arduino
+Arduino is an Italian open-source hardware and software company, project, and user community that designs and manufactures single-board microcontrollers and        
+                    (<img align="right" width="300" height="180" src="https://github.com/user-attachments/assets/d1ea6397-1819-4357-a4ed-60843544cfcc"> ...) 
+microcontroller kits for building digital devices. Arduino board designs use a variety of microprocessors and controllers. The boards are equipped with sets of digital and analog input/output (I/O) pins that may be interfaced to various expansion boards ('shields') or breadboards (for prototyping) and other circuits.
+- ESP32 is a series of low-cost, low-power system on a chip microcontrollers with integrated Wi-Fi and dual-mode Bluetooth.
 -[Datasheet ESP32](https://github.com/silicon-sat/SI-2024-CubeSat/blob/main/docs/Datasheet-ESP32.pdf)
 
 ## Lab-2 Blinking LED
