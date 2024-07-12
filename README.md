@@ -63,6 +63,8 @@ Code -[FFT](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/F
 
 #### FSK
 Frequency-shift keying (FSK) is a digital modulation technique that transmits information wirelessly by shifting the frequency of a carrier signal to represent binary 1s and 0s.
-Code-[FSK]
+Code-[FSK](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/FSK)
+![WhatsApp Image 2024-07-11 at 21 09 14](https://github.com/user-attachments/assets/dabcf1fd-2ac1-4b33-8b07-b0a43f650c3e)
+
 
 
