@@ -143,10 +143,14 @@ int led13 = 11;                // LED connected to digital pin 11
 [LED](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/OLED%20Display)
 ![oled](https://github.com/user-attachments/assets/f5305fb5-a027-4e0c-9fb6-c8ba7d1f6545)
 
-## ## Lab-6 Controlling an LED through serial monitor
-Serial monitor to OLED Display-[Control](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/tree/main/Lab)
-## Lab-8 SIGNAL PROCESSING USING PYTHON:-
+## Lab-6 Controlling an LED through serial monitor
+- We can control a led through the code [Control](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/tree/main/Lab)
 
+## Lab-7 I2C-based OLED Display control
+I2C stands for Inter-Integrated Circuit. It is a bus interface connection protocol incorporated into devices for serial communication. It was originally designed by Philips Semiconductor in 1982. Recently, it is a widely used protocol for short-distance communication. It is also known as Two Wired Interface(TWI). Working of I2C Communication Protocol : It uses only 2 bi-directional open-drain lines for data communication called SDA and SCL. Both these lines are pulled high. Serial Data (SDA) – Transfer of data takes place through this pin. Serial Clock (SCL) – It carries the clock signal
+
+
+## Lab-8 SIGNAL PROCESSING USING PYTHON:-
 #### FFT
 Fourier analysis transforms signals from the time domain to the frequency domain. A mathematical method for transforming a finite time function of equally spaced time samples into a function of frequency of equally spaced complex frequency samples.
 We have used python to implement FFT using WSL to change signals from time to frequency domain and observe the waveform.
