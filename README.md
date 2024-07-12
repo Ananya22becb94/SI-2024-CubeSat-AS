@@ -58,8 +58,8 @@ so the equivalent resistance which we had choosen for our convienience was= 100 
 #### FFT
 Fourier analysis transforms signals from the time domain to the frequency domain. A mathematical method for transforming a finite time function of equally spaced time samples into a function of frequency of equally spaced complex frequency samples.
 We have used python to implement FFT using WSL to change signals from time to frequency domain and observe the waveform.
-Code -[FFT](
-
+Code -[FFT](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/FFT)
+![WhatsApp Image 2024-07-11 at 21 09 13](https://github.com/user-attachments/assets/3c2dad6a-7f93-4b60-ab6e-8ecc8d3669d9)
 
 
 
