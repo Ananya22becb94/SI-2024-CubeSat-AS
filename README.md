@@ -138,9 +138,13 @@ int led13 = 11;                // LED connected to digital pin 11
                   delay(30); 
                          }
 ```
-### Lab-5 Printing data in the serial Monitor
-[LED display](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/OLED%20Display)
+### Lab-5 Printing data in the serial monitor
+- Data can be printed the OLED display by a serial monitor and the following code can be used to print the message in the display.
+[LED](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/OLED%20Display)
+![oled](https://github.com/user-attachments/assets/f5305fb5-a027-4e0c-9fb6-c8ba7d1f6545)
+
 ## Lab-8 SIGNAL PROCESSING USING PYTHON:-
+
 #### FFT
 Fourier analysis transforms signals from the time domain to the frequency domain. A mathematical method for transforming a finite time function of equally spaced time samples into a function of frequency of equally spaced complex frequency samples.
 We have used python to implement FFT using WSL to change signals from time to frequency domain and observe the waveform.
