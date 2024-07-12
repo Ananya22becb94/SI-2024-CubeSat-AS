@@ -42,10 +42,8 @@ void loop() {
   delay(1000);
 }
 ```
-
 ## Lab-3 Dimming LED
-Parameters from the LED Datasheet
-
+Parameters from the LED Datasheet                               
 | Parameters | Value |
 |--------|------|
 |Max Forward Current| 30mA|
@@ -54,14 +52,19 @@ Parameters from the LED Datasheet
 |Colour| Red |
 |Typical Capacitance| 45 pF|
 |Operating Range| -40 to 85 C|
-
+<img align="right" width="500" height="250" src="https://github.com/Rajesh100903/SI-2024-22BECB73/assets/173932157/5d93dee8-790e-4790-976c-a0a2285f1d4b">
+ From the ESP 32 Datasheet
+| Parameters | Values |
+|------------|--------|
+| max output voltage | 4.34 V|
+| max output current that GPIO can source from supply to load | .06mA |  
 equivalent resistance calculation- for the circuit as shown GPIO->R->LED diode->0
 
 =>4.34-30x10pow(-3)(R)-0.7=0 =>R=3.64/30x10pow(-3)= 121.33 ohms
 
 so the equivalent resistance which we had choosen for our convienience was= 100 ohms
 
-## Lab-4 SIGNAL PROCESSING USING PYTHON:-
+## Lab-8 SIGNAL PROCESSING USING PYTHON:-
 #### FFT
 Fourier analysis transforms signals from the time domain to the frequency domain. A mathematical method for transforming a finite time function of equally spaced time samples into a function of frequency of equally spaced complex frequency samples.
 We have used python to implement FFT using WSL to change signals from time to frequency domain and observe the waveform.
