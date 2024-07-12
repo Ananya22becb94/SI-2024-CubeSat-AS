@@ -18,10 +18,11 @@ microcontroller kits for building digital devices.
 - Arduino board designs use a variety of microprocessors and controllers. The boards are equipped with sets of digital and analog input/output (I/O) pins that may be interfaced to various expansion boards ('shields') or breadboards (for prototyping) and other circuits.
 - ESP32 is a series of low-cost, low-power system on a chip microcontrollers with integrated Wi-Fi and dual-mode Bluetooth.
 - Here is the datasheet of ESP 32 devolopment kit [Datasheet ESP32](https://github.com/silicon-sat/SI-2024-CubeSat/blob/main/docs/Datasheet-ESP32.pdf)
--Here is a simple code to blink a led-[LED Blinking](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/blinking%20led)
+  
+- Here is a simple code to blink a led-[LED Blinking](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/blinking%20led)
 
-## Lab-2 Blinking LED
-[Source](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/tree/main/Lab) 
+## Lab-2 Introduction to GPIO programming                            <img align="right" width="200" height="200" src="https://github.com/user-attachments/assets/d406281f-0678-4159-9289-151b28b29aa4">
+- GPIO, General Purpose Input Output is a set of pins in the microcontroller, which functions by passing data into and out of the board. They serve as a bidirectional pin, either as an input or output pin, or it also serves as an alternate functionality pin.
 ```C
 #define LED1 2
 #define LED2 17
