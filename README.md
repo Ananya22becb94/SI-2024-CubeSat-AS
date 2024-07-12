@@ -168,6 +168,17 @@ Code-[Generation of cos wave](https://github.com/Ananya22becb94/SI-2024-CubeSat-
 
 ##  Lab-9 I2C temperature sensor interface
 We have simulated DHT22 to sense temperature and humidity and display every packet of data recieved by a serial monitor. Code for temperature sensing -[temperature sensor interface](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/temperature%20sensor)
+## ## Lab-10 Introduction to LoRa module
+##### LoRa 
+LoRa is a long-distance wireless transmission technology based on spread spectrum technology. It adopts the direct sequence spread spectrum method, which has strong anti-interference and high receiving sensitivity, while meeting the needs of low power consumption.
+<img width="360" alt="LoRa mdoule" src="https://github.com/user-attachments/assets/929733aa-b627-4cbe-91fb-bf3ce72462c7">
+𝐶ℎ𝑎𝑛𝑛𝑒𝑙 𝐶𝑎𝑝𝑎𝑐𝑖𝑡𝑦 𝐶 = 𝐵 ⋅ log2 (1 +𝑆/𝑁) 𝑏𝑖𝑡𝑠/𝑠𝑒𝑐
+𝑤ℎ𝑒𝑟𝑒:
+𝐵 𝑖𝑠 𝑡ℎ𝑒 𝑐ℎ𝑎𝑛𝑛𝑒𝑙 𝑏𝑎𝑛𝑑𝑤𝑖𝑑𝑡ℎ 𝐵 ,
+𝑆 𝑖𝑠 𝑡ℎ𝑒 𝑎𝑣𝑒𝑟𝑎𝑔𝑒 𝑠𝑖𝑔𝑛𝑎𝑙 𝑝𝑜𝑤𝑒𝑟 𝑊𝑎𝑡𝑡𝑠 ,
+𝑁: 𝑎𝑣𝑒𝑟𝑎𝑔𝑒 𝑛𝑜𝑖𝑠𝑒 𝑝𝑜𝑤𝑒𝑟 (𝑤𝑎𝑡𝑡𝑠)
+With some algebra and assuming S/N << 1 :
+𝐶ℎ𝑎𝑛𝑛𝑒𝑙 𝐶𝑎𝑝𝑎𝑐𝑖𝑡𝑦 𝐶 ≈ 𝐵 ⋅𝑆/𝑁 𝑏𝑖𝑡𝑠/𝑠𝑒c
 ## Introduction to antenna modeling and simulation software 4NEC2:-
 
 Using 4NEC2, we did modelling of Antenna and observed the frequency sweep , radiation pattern,SWR etc.
