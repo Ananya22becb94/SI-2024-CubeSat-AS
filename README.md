@@ -293,5 +293,44 @@ This is the excel sheet containing all the data about the 49 packets that our gr
 
 ![WhatsApp Image 2024-07-13 at 10 34 35](https://github.com/user-attachments/assets/fabcc967-5cea-41a3-82f4-487777d42632)
 
+## Lab 18: Processing TLE data with Python
+Two Line Element (TLE) sets are data formats used to describe the orbits of Earth-orbiting objects such as satellites. Each TLE consists of two lines of data that provide information about the satellite's orbital parameters. These elements are essential for tracking and predicting the satellite's position and motion.
+
+
+Here is an example of a TLE data
+- 1 25544U 98067A   20335.91902778  .00000825  00000-0  23903-4 0  9993
+- 2 25544  51.6465 105.5483 0002365  23.9857 336.1391 15.49450779249916
+Explanation:-
+# Line 1 Breakdown:
+- Line number (1)
+- 25544: Satellite number (25544)
+- U: Classification (Unclassified)
+- 98067A: International Designator
+- 98: Launch Year (1998)
+- 067: Launch Number of the Year (67th launch in 1998)
+- A: Piece of the launch (first piece)
+- 20335.91902778: Epoch
+- 20: Year (2020)
+- 335.91902778: Day of the year and fractional portion of the day (335th day of 2020, 22.06 hours into the day)
+- .00000825: First Derivative of Mean Motion (rev/day²)
+- 00000-0: Second Derivative of Mean Motion (rev/day³) (often set to zero)
+- 23903-4: BSTAR drag term (a measure of atmospheric drag)
+- 0: Ephemeris type (0 is used for SGP4)
+- 999: Element number (element set number, 999)
+- 3: Checksum for line 1
+# Line 2 Breakdown:
+- 2: Line number (2)
+- 25544: Satellite number (25544)
+- 51.6465: Inclination (degrees, 51.6465°)
+- 105.5483: Right Ascension of the Ascending Node (degrees, 105.5483°)
+- 0002365: Eccentricity (0.0002365)
+- 23.9857: Argument of Perigee (degrees, 23.9857°)
+- 336.1391: Mean Anomaly (degrees, 336.1391°)
+- 15.49450779: Mean Motion (revolutions per day, 15.49450779 rev/day)
+- 24991: Revolution number at epoch (24991st orbit since launch)
+- 6: Checksum for line 2
+
+
+  The code for finding out the position of a satelite from it's given TLE data is [TLE](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/TLE)
 
 
