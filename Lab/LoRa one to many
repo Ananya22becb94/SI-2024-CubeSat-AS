@@ -1,0 +1,33 @@
+#include <SPI.h>
+#include <LoRa.h>
+#define SCK 18     // GPIO Pin connected to SCK of Ra-02
+#define MISO 19    // GPIO Pin connected to MISO of Ra-02
+#define MOSI 23    // GPIO Pin connected to MOSI of Ra-02
+#define SS 5       // GPIO Pin connected to NSS of Ra-02
+#define RST 14     // GPIO Pin connected to RESET of Ra-02
+#define DI0 4      // GPIO Pin connected to DIO0 of Ra-02
+void setup() {
+Serial.begin(9600);
+while (!Serial);
+LoRa.setPins(SS, RST, DI0);
+if (!LoRa.begin(915E6)) {
+ Serial.println("LoRa init failed. Check your connections.");
+ while (true);
+}
+Serial.println("LoRa init succeeded.");
+}
+void loop() {
+// Check for LoRa packets
+int packetSize = LoRa.parsePacket();
+if (packetSize) {
+ // Received a packet
+ Serial.print("Received packet: ");
+
+ // Read packet
+ while (LoRa.available()) {
+   String message = LoRa.readString();
+   Serial.println(message);
+ }
+}
+delay(100);  // Wait a short delay before checking again
+}
