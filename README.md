@@ -8,6 +8,10 @@ A CubeSat is a class of small satellite with a form factor of 10 cm (3.9 in) cub
 
 The number of joined units classifies the size of CubeSats and according to the CubeSat Design Specification are scalable along only one axis to fit the forms of 0.5U, 1U, 1.5U, 2U, or 3U. 
 
+
+![Screenshot 2024-07-13 001940](https://github.com/user-attachments/assets/15f2b07e-e147-450f-85f0-6a9699d2d722)
+
+
 # Lab Exercises
 
 ## Lab-1 Introduction to ESP32
@@ -179,6 +183,9 @@ LoRa is a long-distance wireless transmission technology based on spread spectru
 𝑁: 𝑎𝑣𝑒𝑟𝑎𝑔𝑒 𝑛𝑜𝑖𝑠𝑒 𝑝𝑜𝑤𝑒𝑟 (𝑤𝑎𝑡𝑡𝑠)
 With some algebra and assuming S/N << 1 :
 𝐶ℎ𝑎𝑛𝑛𝑒𝑙 𝐶𝑎𝑝𝑎𝑐𝑖𝑡𝑦 𝐶 ≈ 𝐵 ⋅𝑆/𝑁 𝑏𝑖𝑡𝑠/𝑠𝑒c
+## Lab 11- LoRa communication
+#### Introduction to Lora communication using Ra-02 Lora transceiver module with ESP32
+
 ## Introduction to antenna modeling and simulation software 4NEC2:-
 
 Using 4NEC2, we did modelling of Antenna and observed the frequency sweep , radiation pattern,SWR etc.
