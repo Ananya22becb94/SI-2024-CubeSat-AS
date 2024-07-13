@@ -190,11 +190,12 @@ LoRa (Long Range) communication is a wireless communication technology designed 
 
 ![Screenshot 2024-07-13 065555](https://github.com/user-attachments/assets/6534032b-f539-4f9f-903a-17abb5349a31)
 
-###Conditions for efficient communication between LoRa and
-      - Frequency: Ensure both Ra-02 modules are set to the same frequency (e.g., 915 MHz in the example).
-      - Antennas: Attach suitable antennas to Ra-02 modules for better range.
-      - Power: Ra-02 modules operate at 3.3V, ensure stable power supply.
-      - Range: LoRa can achieve several kilometers in range under ideal conditions. We can refer to the following code to communicate through the LoRa as a transmitter and reciever-[LoRa](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/LoRa)
+ Conditions for efficient communication between LoRa and Antenna
+- Frequency: Ensure both Ra-02 modules are set to the same frequency (e.g., 915 MHz in the example).
+- Antennas: Attach suitable antennas to Ra-02 modules for better range.
+- Power: Ra-02 modules operate at 3.3V, ensure stable power supply.
+- Range: LoRa can achieve several kilometers in range under ideal conditions. 
+We can refer to the following code to communicate through the LoRa as a transmitter and reciever-[LoRa](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/LoRa)
 
 
 ## Lab 12-Communication between two LoRa nodes
@@ -259,4 +260,38 @@ The following steps were taken to design an antenna and tune it to 433 Mhz:-
 
 
 ![WhatsApp Image 2024-07-13 at 10 22 44](https://github.com/user-attachments/assets/cd8a1d79-196e-43b9-9953-2eea6e712c8d)
+
+## Lab 16: Introduction to TinyGS
+TinyGS is a community-driven project focused on providing a global network of low-cost ground stations for tracking and receiving data from low Earth orbit (LEO) satellites.TinyGS is an open-source project, allowing anyone to set up a ground station and contribute to the network.
+
+## Lab 17: Setting up a TinyGS ground station
+The link to the ground station created by us[SIT BBS](https://tinygs.com/station/SITBBS2_0GS@5483354857)
+
+
+
+
+
+
+
+
+![Screenshot 2024-07-13 103737](https://github.com/user-attachments/assets/33f7b9c7-76b9-4c5d-ad41-0ff2d7f889a0)
+
+This is the excel sheet containing all the data about the 49 packets that our ground station and antenna recieved from various satelites orbiting around earth.
+
+
+
+
+
+[SITBBS_02.xlsx](https://github.com/user-attachments/files/16201026/SITBBS_02.xlsx)
+
+
+
+
+
+
+
+
+![WhatsApp Image 2024-07-13 at 10 34 35](https://github.com/user-attachments/assets/fabcc967-5cea-41a3-82f4-487777d42632)
+
+
 
