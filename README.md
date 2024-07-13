@@ -249,6 +249,9 @@ The packets were sent and recieved with RSSI(Received Signal Strength Indicator)
 We had also sensed temperature and humidity packets through DHT 22 and sent it through LoRa module with ESP 32 board to a serial monitor in form of packets.[temp and humidity](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/temp%20and%20humidity)
 
 ## Lab 13- LoRa one-to-many communication setup
+In a one-to-many communication setup, a single LoRa transmitter (e.g., a gateway or base station) communicates with multiple LoRa receivers (e.g., sensors or nodes). This is a common configuration in IoT networks, where a central gateway collects data from numerous distributed sensors.
+
+
 The following is the code for transmitting message from one transmitter and recieving with different serial monitors[LoRa one to many](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/LoRa%20one%20to%20many)
 
 ## Lab 14-Introduction to antenna modeling and simulation software 4NEC2
