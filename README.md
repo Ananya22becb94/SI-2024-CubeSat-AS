@@ -1,6 +1,6 @@
 # SI-2024-CubeSat-AS
 📡Repository for Summer Internship 2024 (CubeSat and Satelite Communication)
-##### INTRODUCTION:-
+# INTRODUCTION:-
 
 ![OIP](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/assets/173779301/4b125a76-c2fc-47c7-8569-c394e6201a28)
 
@@ -10,6 +10,52 @@ The number of joined units classifies the size of CubeSats and according to the 
 
 
 ![Screenshot 2024-07-13 001940](https://github.com/user-attachments/assets/15f2b07e-e147-450f-85f0-6a9699d2d722)
+# CubeSat Dispenser System
+The dispenser provides attachment to a launch vehicle (or rocket), protects the CubeSat during launch, and releases it into space at the appropriate time.
+![Screenshot 2024-07-13 121742](https://github.com/user-attachments/assets/629c7a8d-e172-419e-8052-a19e3ffee26f)
+
+
+# Development Process Overview
+Typical Development Cycle:-
+- Concept Development (1–6 months)
+- Securing Funding (1–12 months)
+- Merit and Feasibility Reviews (1–2 months)
+- CubeSat Design (1–6 months)
+- Development and Submittal of Proposal in Response to CSLI Call (3–4 months)
+- Selection and Manifesting (1–36 months)
+- Mission Coordination (9–18 months)
+- Licensing (4–6 months)
+- Flight-Specific Documentation Development and Submittal (10–12 months)
+- Ground Station Design, Development, and Testing (2–12 months)
+- CubeSat Hardware Fabrication and Testing (2–12 months)
+- Mission Readiness Reviews (half-day)
+- CubeSat to Dispenser Integration and Testing (1 day)
+- Dispenser to Launch Vehicle Integration (1 day)
+- Launch (1 day)
+- Mission Operations (variable, up to 20 years)
+  
+# Modulation Schemes  
+![Screenshot 2024-07-13 122015](https://github.com/user-attachments/assets/8a29754d-26df-4962-aa94-e8e1a7a75203)
+
+
+
+![spread spectrum](https://github.com/user-attachments/assets/48df8716-d061-427a-b6e3-df05f8100018)
+
+
+
+
+![spread spectrum principles](https://github.com/user-attachments/assets/c8b3c61b-491d-4ee8-a5ef-b963736513cd)
+
+
+
+
+![ss demodulation](https://github.com/user-attachments/assets/0f83fd65-5db0-41b0-a51e-8994b6ede1f6)
+
+## RSSI and SNR LoRa Mode in LF Mode (433MHz)
+### For SNR > 0:
+- RSSI or Packet Strength (dBm) = -164 + RSSI 
+### For SNR < 0:
+- RSSI or Packet Strength (dBm) = -164 + PacketRSSI + 0.25*PacketSNR
 
 
 # Lab Exercises
@@ -142,7 +188,7 @@ int led13 = 11;                // LED connected to digital pin 11
                   delay(30); 
                          }
 ```
-### Lab-5 Printing data in the serial monitor
+## Lab-5 Printing data in the serial monitor
 - Data can be printed the OLED display by a serial monitor and the following code can be used to print the message in the display.
 [LED](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/OLED%20Display)
 ![oled](https://github.com/user-attachments/assets/f5305fb5-a027-4e0c-9fb6-c8ba7d1f6545)
@@ -172,7 +218,7 @@ Code-[Generation of cos wave](https://github.com/Ananya22becb94/SI-2024-CubeSat-
 
 ##  Lab-9 I2C temperature sensor interface
 We have simulated DHT22 to sense temperature and humidity and display every packet of data recieved by a serial monitor. Code for temperature sensing -[temperature sensor interface](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/temperature%20sensor)
-## ## Lab-10 Introduction to LoRa module
+## Lab-10 Introduction to LoRa module
 ##### LoRa 
 LoRa is a long-distance wireless transmission technology based on spread spectrum technology. It adopts the direct sequence spread spectrum method, which has strong anti-interference and high receiving sensitivity, while meeting the needs of low power consumption.
 <img width="360" alt="LoRa mdoule" src="https://github.com/user-attachments/assets/929733aa-b627-4cbe-91fb-bf3ce72462c7">
@@ -332,5 +378,5 @@ Explanation:-
 
 
   The code for finding out the position of a satelite from it's given TLE data is [TLE](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/TLE)
-
+  Latitude was generated to be as 33.07590399036185 longitude was -39.341103283558745 and altitude was 830.8149737295089 kms
 
