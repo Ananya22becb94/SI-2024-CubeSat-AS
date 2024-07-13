@@ -194,7 +194,26 @@ int led13 = 11;                // LED connected to digital pin 11
 ![oled](https://github.com/user-attachments/assets/f5305fb5-a027-4e0c-9fb6-c8ba7d1f6545)
 
 ## Lab-6 Controlling an LED through serial monitor
-- We can control a led through the code [Control](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/tree/main/Lab)
+- We can control a led through the code [Control](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/Control)
+  ### To control an LED through a serial monitor using an Arduino, you can follow these steps:
+
+- Set up your hardware:
+    - Connect the anode (long leg) of the LED to a digital pin on the Arduino (e.g., pin 13).
+    - Connect the cathode (short leg) of the LED to a resistor (220 ohms recommended).
+    - Connect the other end of the resistor to the ground (GND) on the Arduino.
+- Write the Arduino code:
+     - Open the Arduino IDE.
+     - Write the code to control the LED based on serial input.
+- Upload the code to the Arduino:
+    - Connect your Arduino to your computer using a USB cable.
+    - Select the appropriate board and port from the Arduino IDE.
+    - Click on the "Upload" button to upload the code to the Arduino.
+- Open the Serial Monitor:
+  - Click on the magnifying glass icon in the top-right corner of the Arduino IDE to open the Serial Monitor.
+  - Set the baud rate to 9600 to match the Serial.begin(9600); in your code.
+- Control the LED:
+  - Type 1 and press enter to turn the LED on.
+  - Type 0 and press enter to turn the LED off.
 
 ## Lab-7 I2C-based OLED Display control
 I2C stands for Inter-Integrated Circuit. It is a bus interface connection protocol incorporated into devices for serial communication. It was originally designed by Philips Semiconductor in 1982. Recently, it is a widely used protocol for short-distance communication. It is also known as Two Wired Interface(TWI). Working of I2C Communication Protocol : It uses only 2 bi-directional open-drain lines for data communication called SDA and SCL. Both these lines are pulled high. Serial Data (SDA) – Transfer of data takes place through this pin. Serial Clock (SCL) – It carries the clock signal
