@@ -190,8 +190,25 @@ int led13 = 11;                // LED connected to digital pin 11
 ```
 ## Lab-5 Printing data in the serial monitor
 - Data can be printed the OLED display by a serial monitor and the following code can be used to print the message in the display.
-[LED](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/OLED%20Display)
+[OLED](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/OLED%20Display)
 ![oled](https://github.com/user-attachments/assets/f5305fb5-a027-4e0c-9fb6-c8ba7d1f6545)
+
+- Hardware Setup
+   - Connect the OLED Display: OLED displays typically use I2C or SPI communication protocols.
+- For I2C:
+   - Connect VCC to 3.3V or 5V (depending on your OLED).
+   - Connect GND to GND.
+   - Connect SCL to A5 (for Arduino Uno) or the corresponding SCL pin on your board.
+   - Connect SDA to A4 (for Arduino Uno) or the corresponding SDA pin on your board.
+- For SPI:
+    - Connections vary, but generally involve VCC, GND, SCK, MOSI, and a few other pins like CS and DC.
+- Install Necessary Libraries
+    - Adafruit SSD1306 Library: This library is commonly used for controlling OLED displays.
+    - Adafruit GFX Library: This library provides graphics functions for drawing on the display.
+- To install these libraries:
+    - Open the Arduino IDE.
+    - Go to Sketch > Include Library > Manage Libraries.
+    - Search for "Adafruit SSD1306" and "Adafruit GFX", then install them
 
 ## Lab-6 Controlling an LED through serial monitor
 - We can control a led through the code [Control](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/Control)
