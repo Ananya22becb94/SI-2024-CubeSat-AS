@@ -194,7 +194,7 @@ LoRa (Long Range) communication is a wireless communication technology designed 
        Frequency: Ensure both Ra-02 modules are set to the same frequency (e.g., 915 MHz in the example).
        Antennas: Attach suitable antennas to Ra-02 modules for better range.
        Power: Ra-02 modules operate at 3.3V, ensure stable power supply.
-       Range: LoRa can achieve several kilometers in range under ideal conditions. We can refer to the following code to communicate through the LoRa as a transmitter and reciever-
+       Range: LoRa can achieve several kilometers in range under ideal conditions. We can refer to the following code to communicate through the LoRa as a transmitter and reciever-[LoRa](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/LoRa)
 
 
 ## Introduction to antenna modeling and simulation software 4NEC2:-
