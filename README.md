@@ -184,7 +184,18 @@ LoRa is a long-distance wireless transmission technology based on spread spectru
 With some algebra and assuming S/N << 1 :
 𝐶ℎ𝑎𝑛𝑛𝑒𝑙 𝐶𝑎𝑝𝑎𝑐𝑖𝑡𝑦 𝐶 ≈ 𝐵 ⋅𝑆/𝑁 𝑏𝑖𝑡𝑠/𝑠𝑒c
 ## Lab 11- LoRa communication
-#### Introduction to Lora communication using Ra-02 Lora transceiver module with ESP32
+#### Introduction to Lora communication using Ra-02 Lora transceiver module with ESP32:-
+LoRa (Long Range) communication is a wireless communication technology designed for long-range communication with low power consumption. In this case, we'll explore using the Ra-02 LoRa transceiver module with the ESP32 microcontroller.
+
+
+![Screenshot 2024-07-13 065555](https://github.com/user-attachments/assets/6534032b-f539-4f9f-903a-17abb5349a31)
+
+###Conditions for efficient communication between LoRa and
+       Frequency: Ensure both Ra-02 modules are set to the same frequency (e.g., 915 MHz in the example).
+       Antennas: Attach suitable antennas to Ra-02 modules for better range.
+       Power: Ra-02 modules operate at 3.3V, ensure stable power supply.
+       Range: LoRa can achieve several kilometers in range under ideal conditions. We can refer to the following code to communicate through the LoRa as a transmitter and reciever-
+
 
 ## Introduction to antenna modeling and simulation software 4NEC2:-
 
