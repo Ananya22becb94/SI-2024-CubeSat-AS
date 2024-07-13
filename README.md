@@ -197,6 +197,10 @@ LoRa (Long Range) communication is a wireless communication technology designed 
        Range: LoRa can achieve several kilometers in range under ideal conditions. We can refer to the following code to communicate through the LoRa as a transmitter and reciever-[LoRa](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/LoRa)
 
 
+## Lab 12-Communication between two LoRa nodes
+
+
+
 ## Introduction to antenna modeling and simulation software 4NEC2:-
 
 Using 4NEC2, we did modelling of Antenna and observed the frequency sweep , radiation pattern,SWR etc.
