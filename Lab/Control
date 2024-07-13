@@ -1,0 +1,20 @@
+int ledPin = 13; // LED connected to digital pin 13
+
+void setup() {
+  pinMode(ledPin, OUTPUT); // Set the digital pin as output
+  Serial.begin(9600);      // Start serial communication at 9600 baud
+}
+
+void loop() {
+  if (Serial.available() > 0) {
+    char command = Serial.read(); // Read the incoming byte
+
+    if (command == '1') {
+      digitalWrite(ledPin, HIGH); // Turn the LED on
+      Serial.println("LED is ON");
+    } else if (command == '0') {
+      digitalWrite(ledPin, LOW);  // Turn the LED off
+      Serial.println("LED is OFF");
+    }
+  }
+}
