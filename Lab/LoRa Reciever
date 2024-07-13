@@ -1,0 +1,45 @@
+#include <SPI.h>
+#include <LoRa.h>
+
+//TinyGS Pin def
+#define DIO0 26
+#define RST 14
+#define NSS 18
+#define MOSI 27
+#define MISO 19
+#define SCLK 5
+void setup(){
+  Serial.begin(115200);
+  while (!Serial);
+  Serial.println("LoRa Reciever");
+  LoRa.setSpreadingFactor(6); 
+  LoRa.setSignalBandwidth(7.8);
+
+  SPI.begin(SCLK,MISO,MOSI,NSS);
+  LoRa.setPins(NSS,RST,DIO0);
+  while(!LoRa.begin(433E6)){
+    Serial.println(".");
+  
+  }
+  //change sync word(0xF3) to match the reciever
+  //the sync word assures you don't get LoRa messages from other LoRa transceivers
+  //ranges from 0-0xFF
+  LoRa.setSyncWord(0xF3);
+  Serial.println("LoRa initialising OK!");
+}
+void loop(){
+ //try to parse packet
+ int packetSize = LoRa.parsePacket();
+ if(packetSize){
+  Serial.print("Recieved packet '");
+  while (LoRa.available()){
+    String LoRaData = LoRa.readString();
+    Serial.print(LoRaData);
+  }
+ Serial.print("' with RSSI");
+ float snr = LoRa.packetSnr();
+ Serial.println(snr);
+ Serial.println(LoRa.packetRssi());
+ }
+ delay(500);
+}
