@@ -384,3 +384,10 @@ Explanation:-
   The code for finding out the position of a satelite from it's given TLE data is [TLE](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/TLE)
   Latitude was generated to be as 33.07590399036185 longitude was -39.341103283558745 and altitude was 830.8149737295089 kms
 
+  ## Lab 19: Simulating Digital Spread Spectrum Modulation
+- Resimulate FSK from Lab 8
+- Introduce code to convert the digital data into spread spectrum before modulating it to a higher frequency.
+- Simulating Digital Spread Spectrum Modulation involves using software tools to model and analyze the behavior of spread spectrum communication techniques, which are widely used in wireless communication 
+  systems for their robustness against interference and security advantages.
+- Spread spectrum modulation techniques spread the signal over a wider bandwidth compared to the minimum necessary for the transmission of information.
+
