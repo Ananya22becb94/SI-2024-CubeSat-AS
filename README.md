@@ -191,10 +191,10 @@ LoRa (Long Range) communication is a wireless communication technology designed 
 ![Screenshot 2024-07-13 065555](https://github.com/user-attachments/assets/6534032b-f539-4f9f-903a-17abb5349a31)
 
 ###Conditions for efficient communication between LoRa and
-       Frequency: Ensure both Ra-02 modules are set to the same frequency (e.g., 915 MHz in the example).
-       Antennas: Attach suitable antennas to Ra-02 modules for better range.
-       Power: Ra-02 modules operate at 3.3V, ensure stable power supply.
-       Range: LoRa can achieve several kilometers in range under ideal conditions. We can refer to the following code to communicate through the LoRa as a transmitter and reciever-[LoRa](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/LoRa)
+      - Frequency: Ensure both Ra-02 modules are set to the same frequency (e.g., 915 MHz in the example).
+      - Antennas: Attach suitable antennas to Ra-02 modules for better range.
+      - Power: Ra-02 modules operate at 3.3V, ensure stable power supply.
+      - Range: LoRa can achieve several kilometers in range under ideal conditions. We can refer to the following code to communicate through the LoRa as a transmitter and reciever-[LoRa](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/LoRa)
 
 
 ## Lab 12-Communication between two LoRa nodes
@@ -204,11 +204,11 @@ We had also sensed temperature and humidity packets through DHT 22 and sent it t
 ## Lab 13- LoRa one-to-many communication setup
 The following is the code for transmitting message from one transmitter and recieving with different serial monitors[LoRa one to many](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/LoRa%20one%20to%20many)
 
-
-
-## Introduction to antenna modeling and simulation software 4NEC2:-
+## Lab 14-Introduction to antenna modeling and simulation software 4NEC2
+4nec2 is a popular free NEC-2 based antenna modeler and optimizer for Windows. It allows users to design, analyze, and optimize antenna structures and calculate their properties such as radiation patterns, impedance, and more. Here's a brief overview and some guidance on how to use 4nec2.We can manufacture dipole antennas, horn shapped antennas , V shapped antennas.
 
 Using 4NEC2, we did modelling of Antenna and observed the frequency sweep , radiation pattern,SWR etc.
+This is the code for antenna modelling of loaded v dipole type
 Code-[loaded v dipole](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/Antenna%20modelling%20in%204NEC2)
 
 
@@ -227,4 +227,36 @@ Code-[loaded v dipole](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob
 
 
 ![Screenshot 2024-07-12 154752](https://github.com/user-attachments/assets/312d587c-75d6-4a36-8e3e-080a346d0ede)
+
+The matching network is:-
+
+
+
+
+
+![Screenshot 2024-07-13 092955](https://github.com/user-attachments/assets/968daec7-b88c-4012-b2ed-b4789c1f1ac0)
+
+## Lab 15: Physical design of Dipole and V-dipole antennas
+The following steps were taken to design an antenna and tune it to 433 Mhz:-
+
+- First the length approxing to 18cm were cut and the SWR and minimum frequency were observed using a nano VNA.
+- Then it was tuned using VNA and cut respectively by .5 cm or 1 cm to cut down the impedance close to 50 ohm and to lower the frequency to 433 MHz.
+- Then the ESP32 and LoRa module were inbtegrated in a pcb boarde and soldered.
+- Then it was connected to the antenna by an axial cable and the packets were recieved by the board.
+
+
+
+
+
+
+
+
+
+![WhatsApp Image 2024-07-12 at 12 51 57](https://github.com/user-attachments/assets/e0e10087-c9e7-423a-ba14-80a24143f02d)
+
+
+
+
+
+![WhatsApp Image 2024-07-13 at 10 22 44](https://github.com/user-attachments/assets/cd8a1d79-196e-43b9-9953-2eea6e712c8d)
 
