@@ -233,8 +233,7 @@ int led13 = 11;                // LED connected to digital pin 11
   - Type 0 and press enter to turn the LED off.
 
 ## Lab-7 I2C-based OLED Display control
-I2C stands for Inter-Integrated Circuit. It is a bus interface connection protocol incorporated into devices for serial communication. It was originally designed by Philips Semiconductor in 1982. Recently, it is a widely used protocol for short-distance communication. It is also known as Two Wired Interface(TWI). Working of I2C Communication Protocol : It uses only 2 bi-directional open-drain lines for data communication called SDA and SCL. Both these lines are pulled high. Serial Data (SDA) – Transfer of data takes place through this pin. Serial Clock (SCL) – It carries the clock signal
-- Code for I2C based OLED display control-[I2C](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/i2c)
+
 
 ## Lab-8 SIGNAL PROCESSING USING PYTHON:-
 #### FFT
