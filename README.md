@@ -198,6 +198,11 @@ LoRa (Long Range) communication is a wireless communication technology designed 
 
 
 ## Lab 12-Communication between two LoRa nodes
+The packets were sent and recieved with RSSI(Received Signal Strength Indicator) and SNR through serial monitor.The code for LoRa transmitter is [LoRa transmitter](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/LoRa%20transmitter) and for reciever is [LoRa reciever](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/LoRa%20Reciever).
+We had also sensed temperature and humidity packets through DHT 22 and sent it through LoRa module with ESP 32 board to a serial monitor in form of packets.[temp and humidity](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/temp%20and%20humidity)
+
+## Lab 13- LoRa one-to-many communication setup
+The following is the code for transmitting message from one transmitter and recieving with different serial monitors[LoRa one to many](https://github.com/Ananya22becb94/SI-2024-CubeSat-AS/blob/main/Lab/LoRa%20one%20to%20many)
 
 
 
